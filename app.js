@@ -14,12 +14,16 @@ const multer = require('multer'); //its parses data for FILES
 const errorController = require('./controllers/error');
 const User = require('./models/user');
 
-const MONGODB_URI =
-  'mongodb+srv://BobAllan:<enterPassword>@cluster0.gmozk8w.mongodb.net/shop?retryWrites=true&w=majority';
+
+require('dotenv').config()
+
+
+//using environmental variables to fill in data
+const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.Mongo_PASSWORD}@cluster0.gmozk8w.mongodb.net/shop?retryWrites=true&w=majority`;
 
 const app = express();
 const store = new MongoDBStore({
-  uri: MONGODB_URI,
+  uri: `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.gmozk8w.mongodb.net/shop?retryWrites=true&w=majority`,
   collection: 'sessions'
 });
 const csrfProtection = csrf();
@@ -125,7 +129,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true})
+  .connect('mongodb+srv://BobAllan:b5tIpzAWNw8mFonS@cluster0.gmozk8w.mongodb.net/shop?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true})
   .then(result => {
     app.listen(3000);
   })
