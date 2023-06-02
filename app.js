@@ -21,6 +21,7 @@ require('dotenv').config()
 //using environmental variables to fill in data
 const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.Mongo_PASSWORD}@cluster0.gmozk8w.mongodb.net/shop?retryWrites=true&w=majority`;
 
+
 const app = express();
 const store = new MongoDBStore({
   uri: `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.gmozk8w.mongodb.net/shop?retryWrites=true&w=majority`,

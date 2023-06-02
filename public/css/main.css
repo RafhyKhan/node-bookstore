@@ -60,6 +60,12 @@ form {
   padding: 0;
 }
 
+.shopBanner a{
+  font: inherit;
+  font-size: 20;
+  color: rgb(0, 0, 0);
+}
+
 .main-header__item a,
 .main-header__item button {
   font: inherit;
