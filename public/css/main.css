@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-
 * {
   box-sizing: border-box;
 }
@@ -32,8 +31,6 @@ form {
   height: 100%;
 }
 
-
-
 .main-header {
   width: 100%;
   height: 3.5rem;
@@ -63,6 +60,11 @@ form {
   padding: 0;
 }
 
+.shopBanner a{
+  font: inherit;
+  font-size: 20;
+  color: rgb(0, 0, 0);
+}
 
 .main-header__item a,
 .main-header__item button {
@@ -288,4 +290,3 @@ form {
     width: 30rem;
   }
 }
-

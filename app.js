@@ -20,7 +20,7 @@ require('dotenv').config()
 
 //using environmental variables to fill in data
 
-const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.gmozk8w.mongodb.net/shop?retryWrites=true&w=majority`;
+const MONGODB_URI = `mongodb+srv://BobAllan:b5tIpzAWNw8mFonS@cluster0.gmozk8w.mongodb.net/shop?retryWrites=true&w=majority`;
 
 
 const app = express();
