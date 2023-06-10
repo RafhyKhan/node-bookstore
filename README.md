@@ -25,6 +25,8 @@ module.exports = (req, res, next) => {
 
 ---
 
+| Keyword | Description of use |
+| ------ | ----------- |
 | bcrpyt   | For authentication we compare the given password with bcyprt library hashed password listed with given email to validate user.  |
 | sessions | Sessions are used to allow the user to browse freely throughout the app without need to re-login on each page or if they decide to re-open a closed tab |
 | csrf tokens | Used to prevent csrf attacks, by validating all user-requests from backend server. |
