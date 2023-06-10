@@ -175,7 +175,7 @@ exports.getCheckout = (req, res, next) => {
           return {
             quantity: p.quantity,
             price_data: {
-              currency: 'usd', //setting currency to USD
+              currency: 'cad', //setting currency to Canada
               unit_amount: p.productId.price * 100,
               product_data: {
                 name: p.productId.title,

@@ -1,5 +1,5 @@
 
-//We are making Asynchinours Javascript Requests (fetch and send datat without having to reload page or redirect())
+//We are making Asynchronous Javascript Requests (fetch and send datat without having to reload page or redirect())
 
 
 //we put this in parameter when calling function from EJS file
