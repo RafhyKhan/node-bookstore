@@ -3,7 +3,7 @@
 [Check out the App Online!](https://warm-escarpment-73454.herokuapp.com/)
 
 ## Description
-Node BookStore is a muti-paged app consisting of authentication, backend database management, payment services, user account management, csrf tokens and many more. Its created with Nodejs and ExpressJs, using middleware functions and routes for pagination. I also used other libraries such as stripe for payment services and nodemailer with crypt for secure password resets.
+Node BookStore is a muti-paged app consisting of authentication, backend database management, payment services, user account management, CSRF tokens and many more. It was created with Nodejs and ExpressJs, using middleware functions and routes for pagination. I also used other libraries such as Stripe for payment services and nodemailer with crypt for secure password resets.
 
 
 
@@ -11,7 +11,7 @@ Node BookStore is a muti-paged app consisting of authentication, backend databas
 
 | Keyword | Description of use |
 | ------ | ----------- |
-|  NodeJs  | NodeJs is an JS runetime environment that allows developrs to create more faster efficient apps by using less threads per process   |
+|  NodeJs  | NodeJs is an JS runtime environment that allows developers to create faster efficient apps by using fewer threads per process   |
 | expressJs    | Lets us use dynamic html templates like ejs, middleware functions for request, response handling and other benefits.  |
 ``` js
 module.exports = (req, res, next) => {
